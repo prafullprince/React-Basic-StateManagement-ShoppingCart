@@ -6,14 +6,14 @@ import { RiShoppingBag2Fill } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <div className=" bg-slate-800 h-24 flex items-center">
+    <div className=" bg-slate-800 h-20 flex items-center">
       <div className=" w-[70%] mx-auto flex justify-between items-center text-white">
         <div>
           <NavLink to={"/"}>
             <FcShop className="w-[60px] h-[60px]"  />
           </NavLink>
         </div>
-        <div className="flex items-center gap-16">
+        <div className="flex items-center gap-12">
             <div className=" w-[24px] h-[24px]">
                 <NavLink to={'/'}>
                     Home

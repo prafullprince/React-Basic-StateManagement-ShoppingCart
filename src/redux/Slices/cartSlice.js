@@ -5,11 +5,11 @@ export const cartSlice = createSlice({
     name:"cart",
     initialState:[],
     reducers:{
-        addToCart(){
-
+        addToCart(state,action){
+            state.push(action.payload);
         },
-        removeFromCart(){
-
+        removeFromCart(state,action){
+            state.filter( (i)=> i.id !== action.payload );
         }
     }
 });
